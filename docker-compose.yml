@@ -1,0 +1,16 @@
+services:
+  litesync:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: litesync
+    restart: unless-stopped
+    ports:
+      - "8295:8295"
+    volumes:
+      - litesync-data:/data
+    environment:
+      - ENV=production
+
+volumes:
+  litesync-data:

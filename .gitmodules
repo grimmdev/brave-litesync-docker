@@ -1,0 +1,3 @@
+[submodule "litesync"]
+	path = litesync
+	url = https://github.com/ZenTenApp/litesync.git
